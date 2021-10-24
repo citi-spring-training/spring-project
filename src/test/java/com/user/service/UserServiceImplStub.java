@@ -10,4 +10,10 @@ public class UserServiceImplStub implements IUserService {
 		return "1";
 	}
 
+	@Override
+	public void getUsers() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

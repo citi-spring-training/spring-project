@@ -9,10 +9,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import com.user.entity.User;
 import com.user.service.UserServiceImplStub;
-//@RunWith(JUnitPlatform.class)
-//@ExtendWith(SpringExtension.class)
-class UserControllerTest {
-//	@Autowired
+public class UserControllerTestWithStub {
 	UserController userController = new UserController();//Arrange
 	@Test
 	void testSave() {
@@ -20,6 +17,5 @@ class UserControllerTest {
 		User user = new User();
 		String id = userController.save(user );//act
 		assertEquals("1", id);//assert
-	
 	}
 }
